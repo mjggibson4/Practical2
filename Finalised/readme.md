@@ -105,7 +105,10 @@ Select the "Model" menu and "Click" Run. Within the canvas of the GUI, the final
 
 ![alt text](https://github.com/mjggibson4/Practical2/blob/master/Images/RunExample.PNG "Example Run")
 
-Alongside this, a set of statistics are displayed detailing the behaviour of the bacteria, 
+In addition, a set of statistics concerning the movement of the bacteria are produced on completion of the program
+
+![alt text](https://github.com/mjggibson4/Practical2/blob/master/Images/StatisticsOutput.PNG "Example Run")
+
 
 ## 5. Standards Used
 
