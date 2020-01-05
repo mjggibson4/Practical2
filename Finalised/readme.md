@@ -2,9 +2,8 @@
 
 ## Description
 
-This python based project is a simple agents based model of the fallout of a bacterial bomb. This program In this scenario these two competing agents have been defined as that of sheep and wolves. These agents move randomly around a defined domain and are allowed to interact with one another. In particular, these sheep agents "graze" their spatial environment while the wolves consume these sheep if close enough. Both of these agents reproduce dependent on the resources on which they have consumed. This model provides a visual representation of these spatial dynamics and behaviours.
-
-The exact logic and "rules" of this population model can be found in more detail [here](https://github.com/mjggibson4/Practical1/blob/master/Scope.md ""):
+This python-based project has been designed to model of the fallout of a bacterial bomb. In this scenario, a bacterial based bomb has been placed at the top of a building and this program has been designed to model the movement of these particles within the wind and record their find resting locations. This wind is determined by probabilities which are to be defined by the user. The final output of this model is a heatmap of the resting locations of the bacteria and an associated csv file. 
+An in depth insight into how this program was developed is available [here](https://github.com/mjggibson4/Practical1/blob/master/Scope.md ""):
 
 ## Table of Contents
 
@@ -20,28 +19,27 @@ The exact logic and "rules" of this population model can be found in more detail
 
 ## 1. Prerequisites
 
-Before this project can be executed, a suitable python environment must first be in place. This project was used using the data science platform Anaconda. This package is free and includes the integrated development environment Spyder 3.3.6 on which this project was developed. A installation guide to Anaconda alongside installation instructions can be found here: 
+Before this project can be executed, a suitable python environment must first be in place. This project was used using the data science platform Anaconda. This package is free and includes the integrated development environment Spyder 3.3.6 on which this project was developed. An installation guide to Anaconda alongside installation instructions can be found here: 
 [install guide](https://docs.anaconda.com/anaconda/install/windows/ ""). 
 
-This model scrapes the initial locations for the sheep agents from the web. Due to this a suitable web connection is advised although in it absence these starting locations will be randomly generated.
-
+This model scrapes the initial location of the bomb from the web. Due to this a suitable web connection is advised. In the absence of an internet connection, a .txt file containing this bombing location has also been provided. 
 This model was developed in a PC environment but has been successfully tested on Mac OS.
 
 ## 2. Installation
 
-This project consists of 3 python scripts and one text file which should be downloaded from the github repository found here: [Practical 1 Repo](https://github.com/mjggibson4/Practical1 ""). These files should be saved to the users desktop.
+This project consists of 3 python scripts and one text file which should be downloaded from the github repository found here: [Practical 2 Repo](https://github.com/mjggibson4/Practical2 ""). These files should be saved to the user’s desktop. This program attempts to write a .csv file in the location from which the project is run. It is for this reason important the user has write access to this location to prevent complications.
 
 ## 3. Project Structure
 
 The three script files contained within this project have their own unique function.
 
-GUI:  Sets up the graphical user interfaces from which the program is run. This interface allows for the initial parameters of the model to be edited as neccesary. These parameters are verified within this script before the model is allowed to run. 
+GUI:  Sets up the graphical user interfaces from which the program is run. This interface allows for the initial parameters of the model to be edited as necessary. These parameters are verified within this GUI script before the model is allowed to run. 
 
 Maincode: Defines the logic behind the model itself.
 
-Framework: Contains the classes from which the agents are defined. This framework dictates the behaviours of the bactera such as how they move in the XY and Z planes.
+Framework: Contains the classes from which the bacterial agents are defined. This framework dictates the behaviours of the bacteria such as how they move in the XY and Z planes.
 
-In.txt: Backup environment containing the bombing location in the event of no internet connection.
+In.txt (Optional but recommended): Backup environment containing the bombing location in the event of no internet connection.
 
 ## 3. Initialising the Program
 
@@ -49,7 +47,7 @@ This model can be initialised in one of two manners:
 
 #### Option A: From command line
 1. Right click on the Desktop.
-2. Select Open New Command Window Here
+2. Select “Open New Command Window Here”
 3. Type python GUI.py
 4. Press enter
 
@@ -57,7 +55,7 @@ This model can be initialised in one of two manners:
 1. Open the file GUI in Spyder
 2. Press Run
 
-Either of these methods should result in the GUI for the population model being presented as displayed below
+Either of these methods should result in the GUI for the Bacterial Bomb model being presented as displayed below:
 
 <img src="https://github.com/mjggibson4/Practical1/blob/master/GUIGrab.png" width="300">
 
@@ -68,18 +66,34 @@ Either of these methods should result in the GUI for the population model being 
 
 Click the Model menu and then "Set Parameters". This produces a window in which the user is asked to input 3 sets of parameters which will influence the behaviour of the model. These parameters are listed below alongside a brief explanation of what they represent in regards to the model.
 
-* Number of Sheep - The initial number of sheep agents to be placed in the model
-* Number of Wolves - The initial number of wolf agents to be placed in the model
-* Neighbourhood - The distance at which sheep are allowed to share resources
-* Number of Iterations - The number of iterations for which the model will run
-* Wolf Threshold - The number of sheep needed to be eaten by a wolf in order for it to reproduce
-* Sheep Threshold - The amount of units of environment needed to be consumed by a sheep in order for it to reproduce
+#### Initial Conditions
+       Number of Bacteria: Number of bacteria to be released by the bomb
+       Elevation: Height at which bomb is detonated
+        #### XY Probabilities 
+        North: Probability of particle moving in the positive y direction
+        South: Probability of particle moving in the negative y direction
+        West: Probability of particle moving in the negative x direction
+        East: Probability of particle moving in the positive x direction
+
+#### Z Probabilites
+        Up: Probability of particle moving in the positive z direction
+        Level: Probability of particle keeping a constant z value
+        Down: Probability of particle moving in the negative z direction
 
 A screenshot of this menu is provided below:
 
 ![alt text](https://github.com/mjggibson4/Practical1/blob/master/ParameterMenu.png "Logo Title Text 1")
  
-Once these parameters have been defined, click apply. These parameters must be integers and an internal check occurs to verify this is the case. The absolute value of negative numbers are taken to avoid system error. If integers are not input, the following warning screen is displayed and user is forced to re-enter appropriate values:
+Once these parameters have been defined, click apply. These parameters must fulfil the following conditions in order to be accepted by the GUI:
+
+*  All parameters must not be strings
+* Parameters defining XY movement must all be decimals between 0 and 1
+* Parameters defining XY movement must sum to 1
+* Parameters defining Z movement must all be decimals between 0 and 1
+* Parameters defining Z movement must sum to 1
+* The parameters defining the number of bacteria and elevation must be positive integers
+
+An internal check occurs to verify these parameters are valid case. If integers are not input, the following warning screen is displayed and user is forced to re-enter appropriate values:
 
 
 <img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png" width="550">
@@ -87,11 +101,11 @@ Once these parameters have been defined, click apply. These parameters must be i
 
 ### Run the Model
 
-Select the "Model" menu and "Click" Run. Within a figure window, the agents will be observed moving around the domain.
+Select the "Model" menu and "Click" Run. Within the canvas of the GUI, the final resting locations of the bacteria will be displayed as seen below.
 
 ![alt text](https://github.com/mjggibson4/Practical1/blob/master/RunGIF.gif "Example Run")
 
-From this, the user should observe the agents moving randomly, interacting and reproducing accordingly as shown above. The number of wolf and sheep agents for each iteration is shown within the legend of the model.
+Alongside this, a set of statistics are displayed detailing the behaviour of the bacteria, 
 
 ## 5. Standards Used
 
@@ -99,11 +113,10 @@ This model has been produced in Python 3.7. The code has been produced to adhere
 
 ## 6. Known Issues
 
-A known issue within within this project is that model runs within a figure instead of the canvas as intended. This is a bug which I have been so far unable to determine the source of however this does not impact on how the model is run and the results provided.
+A known issue within this project is that an unnecessary figure  is display on running the program. The source of this bug is unknown at the time of writing but has zero impact of the functionality of the program itself and the results provided. 
 
 ## 7. Troubleshooting
-
-In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical1/blob/master/InternalChecks.md "")
+In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical2/blob/master/InternalChecks.md "")
 
 ## 8. Licensing
 
