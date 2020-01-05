@@ -103,7 +103,7 @@ An internal check occurs to verify these parameters are valid case. If integers 
 
 Select the "Model" menu and "Click" Run. Within the canvas of the GUI, the final resting locations of the bacteria will be displayed as seen below.
 
-![alt text](https://github.com/mjggibson4/Practical1/blob/master/RunGIF.gif "Example Run")
+![alt text](https://github.com/mjggibson4/Practical2/blob/master/Images/RunExample.PNG "Example Run")
 
 Alongside this, a set of statistics are displayed detailing the behaviour of the bacteria, 
 
