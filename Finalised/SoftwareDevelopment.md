@@ -122,6 +122,15 @@ The following scenarios were selected:
 | North                  | 0.1    | 0.1    | 0.75   | 0.1    |
 | South                  | 0.1    | 0.1    | 0.1    | 0.75   |
 
+These parameters were selected in order to observed if the plume could be forced to move north, south, east and west. The following results were produced. As it can be seen from the above, the bacteria moved in the desired direction with every scenario.
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestWest.png" >
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestEast.png" >
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestNorth.png" >
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestSouth.png" >
+
+
+
 
 # References
 
