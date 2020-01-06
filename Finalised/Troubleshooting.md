@@ -1,20 +1,28 @@
-# Troubleshooting/Internal Checks
+# Troubleshooting
 
 ## Purpose
-This file documents the internal checks that occur within the code of the Population Model project in order to ensure that it functions correctly. This document should also be used for troubleshooting purposes.
+This file documents the error messages associated within the bacterial bomb model. This document should be used in order to troubleshoot encountered issues.
 
 <br />
 
 ## User Inputs
-Within this model the user is asked to input values for six variables:
+Within this model the user is asked to input values for nine variables:
 
-            * num_of_sheep 
-            * num_of_wolves 
-            * neighbourhood 
-            * num_of_iterations 
-            * wolf_threshold 
-            * sheep_threshold 
-            
+#### Initial Conditions
+   * Number of Bacteria: Number of bacteria to be released by the bomb
+   * Elevation: Height at which bomb is detonated
+   
+#### XY Probabilities 
+    North: Probability of particle moving in the positive y direction
+    South: Probability of particle moving in the negative y direction
+    West: Probability of particle moving in the negative x direction
+    East: Probability of particle moving in the positive x direction
+#### Z Probabilites
+    Up: Probability of particle moving in the positive z direction
+    Level: Probability of particle keeping a constant z value
+    Down: Probability of particle moving in the negative z direction
+    
+
 These variables MUST be positive integers for the program to function correctly. This data is validated internally via a try/except error capturing structure. In the event one of these variables is found not be a positive integer a message box is displayed asking the user to reenter these values as shown below.         
 
 <img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png" width="550">
