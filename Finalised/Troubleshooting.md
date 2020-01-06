@@ -22,9 +22,10 @@ Within this model the user is asked to input values for nine variables which dic
    * Up: Probability of particle moving in the positive z direction
    * Level: Probability of particle keeping a constant z value
    * Down: Probability of particle moving in the negative z direction
-<br />   
+   
+
 These parameters are validated against a set of defined conditions before the program is allowed to proceed. These condition can be viewed in full within the readme documentation XXXXX. These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed.
-<br />
+
 ### Errror Message 1:
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png">
@@ -32,7 +33,7 @@ These parameters are validated against a set of defined conditions before the pr
 
 Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
 
-<br />
+
 ### Error Message 2:
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png">
@@ -40,7 +41,7 @@ Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
 
 Cause: String values have been entered within the parameters and need removed.
 
-<br />
+
 ### Error Message 3: 
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png">
@@ -53,7 +54,7 @@ These variables MUST be positive integers for the program to function correctly.
 
 <img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png">
 
-<br />
+
 
 
 ## Bombing Location Errors
@@ -66,11 +67,10 @@ A seperate scenario was accounted for in which no bombing location was found wit
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorTwoBombs.PNG">
 
-<br />
 
-## Environment
+## Writing CSV
 
-The environment within this model is defined via a .txt file. If this file is not present within the directory from which the script is being run then the program would fail. In this scenario, a try/except error capturing structure has been defined to alert the user and terminate the program.
+This program culminates in a CSV containing the heatmap of the landed bacteria being written to the directory from which the scripts have been run. In the event of the user having no write access to this location, the following error will be observed. In such case, the script should be run from a different location where the user has write acccess. 
 
-<img src="https://github.com/mjggibson4/Practical1/blob/master/NetworkError.png" width="550">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorCSV.PNG">
 
