@@ -17,13 +17,14 @@ Within this model the user is asked to input values for nine variables which dic
    * South: Probability of particle moving in the negative y direction
    * West: Probability of particle moving in the negative x direction
    * East: Probability of particle moving in the positive x direction
+   
 ##### Z Probabilites
    * Up: Probability of particle moving in the positive z direction
    * Level: Probability of particle keeping a constant z value
    * Down: Probability of particle moving in the negative z direction
-    
+<br />   
 These parameters are validated against a set of defined conditions before the program is allowed to proceed. These condition can be viewed in full within the readme documentation XXXXX. These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed.
-
+<br />
 ### Errror Message 1:
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png">
@@ -31,7 +32,7 @@ These parameters are validated against a set of defined conditions before the pr
 
 Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
 
-
+<br />
 ### Error Message 2:
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png">
@@ -39,7 +40,7 @@ Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
 
 Cause: String values have been entered within the parameters and need removed.
 
-
+<br />
 ### Error Message 3: 
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png">
