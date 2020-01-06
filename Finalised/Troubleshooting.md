@@ -32,20 +32,20 @@ Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
 
 ### Error Message 2:
 
-<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png" width="550">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png">
 
 Cause: String values have been entered within the parameters and need removed.
 
 ### Error Message 3: 
 
-<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png" width="550">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png">
 
 Cause: Negative values have been inserted within the parameters
 
 
 These variables MUST be positive integers for the program to function correctly. This data is validated internally via a try/except error capturing structure. In the event one of these variables is found not be a positive integer a message box is displayed asking the user to reenter these values as shown below.         
 
-<img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png" width="550">
+<img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png">
 
 <br />
 
