@@ -57,8 +57,6 @@ The scope of this model included:
 
 The program was ran using the initial conditions as defined by the customers which are defined below:
 
-<img style="float: right;" src="https://github.com/mjggibson4/Practical2/blob/master/Images/IncrementalIterations.png" width="150">
-
 | Initial Conditions  |      |
 |---------------------|------|
 | Number of Bacteria  | 5000 |
@@ -78,6 +76,16 @@ The program was ran using the initial conditions as defined by the customers whi
 | Up                     | 0.2  |
 | North                  | 0.1  |
 
+These parameters gave the following results:
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestingInitial.png" >
+
+The heatmap shown displays the plume moving in an easterly direction which is consistent with the probabilities which have been input to this scenario. the bomb origin is known to be at (50, 150) and this clearly has been extracted correclty. This test is an early indication that the basic functionality of this program is as expected. Further testing using a range of probabilities will be conducted at a later stage to further verify this finding. 
+
+Modifiying the code slightly, the actual plume of the bacteria mid air can be observed. This looks feasible increasing confidence in results.
+
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestingPlume.png" >
 
 
 # References
