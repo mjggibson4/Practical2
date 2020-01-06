@@ -22,15 +22,25 @@ Within this model the user is asked to input values for nine variables which dic
    * Level: Probability of particle keeping a constant z value
    * Down: Probability of particle moving in the negative z direction
     
-These parameters are validated against a set of defined conditions before the program is allowed to proceed. These condition can be viewed in full within the readme documentation XXXXX. These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed
+These parameters are validated against a set of defined conditions before the program is allowed to proceed. These condition can be viewed in full within the readme documentation XXXXX. These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed.
 
 ### Errror Message 1:
 
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png" width="550">
+
+Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
+
 ### Error Message 2:
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png" width="550">
+
+Cause: String values have been entered within the parameters and need removed.
 
 ### Error Message 3: 
 
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png" width="550">
 
+Cause: Negative values have been inserted within the parameters
 
 
 These variables MUST be positive integers for the program to function correctly. This data is validated internally via a try/except error capturing structure. In the event one of these variables is found not be a positive integer a message box is displayed asking the user to reenter these values as shown below.         
