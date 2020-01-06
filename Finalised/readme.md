@@ -119,7 +119,7 @@ A known issue within this project is that an unnecessary figure is displayed on 
 This program attempted to scrape the starting location of the bomb but an error was encountered. At the time of writing the source of this error is unknown.
 
 ## 7. Troubleshooting
-In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical2/blob/master/InternalChecks.md "")
+In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical2/blob/master/Troubleshooting.md "")
 
 ## 8. Licensing
 
