@@ -26,7 +26,7 @@ These parameters are validated against a set of defined conditions before the pr
 
 ### Errror Message 1:
 
-<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png" width="550">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png">
 
 Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
 
