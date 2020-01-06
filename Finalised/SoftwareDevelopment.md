@@ -35,6 +35,12 @@ This project will be undertaken using an iterative to software development. In t
 
 At the time of writing, it is intended to break this workflow into 4 stages:
 
+* Version 1:    Outline basic moving mechanics of bacteria
+* Version 1.1:  Create wind probability variables and create bacteria class in distinct script
+* Version 1.2:  Create GUI script for project. Create error trapping methods.
+* Version 1.3   Finalise project
+
+
 
 # References
 
