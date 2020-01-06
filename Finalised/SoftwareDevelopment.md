@@ -82,7 +82,7 @@ These parameters gave the following result:
 
 The heatmap shown displays the plume moving in an easterly direction which is consistent with the probabilities which have been input to this scenario. the bomb origin is known to be at (50, 150) and this clearly has been extracted correclty. This test is an early indication that the basic functionality of this program is as expected. Further testing using a range of probabilities will be conducted at a later stage to further verify this finding. 
 
-Modifiying the code slightly, the actual plume of the bacteria mid air can be observed. This looks feasible hence increasing confidence in results.
+Modifiying the code slightly, the actual plume of the bacteria mid air can be observed. The diffusion of the bacteria from high to low concentration looks feasible hence increasing confidence in results.
 
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestingPlume.png" >
