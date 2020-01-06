@@ -126,10 +126,13 @@ These parameters were selected in order to observed if the plume could be forced
 
 ##### Test 1
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestWest.png" >
+
 ##### Test 2
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestEast.png" >
+
 ##### Test 3
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestNorth.png" >
+
 ##### Test 4
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestSouth.png" >
 
