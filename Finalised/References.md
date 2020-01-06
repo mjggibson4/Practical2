@@ -5,4 +5,4 @@ Fronczak S. (2019). Software Development Life Cycle (SDLC): Making Sense of the 
 
 Klein, B. (2019). Entry Widgets. Available: https://www.python-course.eu/tkinter_entry_widgets.php. Last accessed 1st Dec 2019.    
 
-Programming for Geographical Information Analysts: Core Skills (WUN)
+Turner A.. (2019). Programming for Geographical Information Analysts: Core Skills (WUN). Available: https://www.geog.leeds.ac.uk/courses/computing/study/core-python-odl/. Last accessed 06th Jan 2020.
