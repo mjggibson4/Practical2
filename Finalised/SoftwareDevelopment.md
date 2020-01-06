@@ -87,6 +87,41 @@ Modifiying the code slightly, the actual plume of the bacteria mid air can be ob
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestingPlume.png" >
 
+### Issues
+
+No error catching was included within this model as far but where is would be included has been recorded within the docstrings of the functions in question with the tag TODO. 
+In debugging, was found that on numerous occasions I had confused x and y coordinates. This was due to python convention of listing the y coordinates before x coordinates and quickly resolved.
+
+# Version 1.1
+
+### Scope
+
+The main change within this version of the bacterial bomb model was that of creating a class for the bacterial agents. This class was created within a separate script and housed the logic for bacterial movement. The probabilities for the movement of the bacteria within the wind were assigned to variables.
+
+Additional Features added included:
+
+*	Bacteria class created within separate script
+*	Wind probability variables created
+*	Error catching for finding the bombing coordinates outlined
+*	Error catching set up for reading csv file containing bombing location
+•	Creation of a function in order to write out landing locations of bacteria to a csv file.
+
+### Testing
+
+The same scenario was repeated as in v1.0 and near identical results were produced. As this program relies on random process small changes were observed but the location of the ‘hotspot’ in a near identical location gives confidence that no functionality has been lost in the process of restructuring the code. 
+
+#### Altering Wind Probabilities 
+
+As variables were constructed regarding the wind probabilities it was decided testing would be conducted in order to investigate the impact of varying these. 
+The following scenarios were selected:
+
+|    XY Probabilities    | Test 1 | Test 2 | Test 3 | Test 4 |
+|------------------------|--------|--------|--------|--------|
+| West                   | 0.05   | 0.75   | 0.1    | 0.1    |
+| East                   | 0.75   | 0.05   | 0.05   | 0.05   |
+| North                  | 0.1    | 0.1    | 0.75   | 0.1    |
+| South                  | 0.1    | 0.1    | 0.1    | 0.75   |
+
 
 # References
 
