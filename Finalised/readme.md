@@ -56,7 +56,7 @@ This model can be initialised in one of two manners:
 
 Either of these methods should result in the GUI for the Bacterial Bomb model being presented as displayed below:
 
-<img src="https://github.com/mjggibson4/Practical1/blob/master/GUIGrab.png" width="300">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/GUI.PNG" width="300">
 
 
 ## 4. Running Model
