@@ -119,15 +119,15 @@ A known issue within this project is that an unnecessary figure is displayed on 
 This program attempted to scrape the starting location of the bomb but an error was encountered. At the time of writing the source of this error is unknown.
 
 ## 7. Troubleshooting
-In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical2/blob/master/Troubleshooting.md "")
+In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/Troubleshooting.md")
 
 ## 8. Licensing
 
-This program is open source and licensed via an MIT license. The full details of this license are available [here](https://github.com/mjggibson4/Practical1/blob/master/License.md "")
+This program is open source and licensed via an MIT license. The full details of this license are available [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/License.md "")
 
 ## 9. Acknowledgements
 
 This project has been produced as part of coursework for the module: Programming for Geographical Information Analysts: Core Skills (WUN).  Exercises and tutorials given within this course have been modified as appropriate and used within the python code for this project. In addition, I'd like to give thanks to my course tutor Andy Turner who helped with issues encountered during development.
 
-References for the produced code as available in the following [here](https://github.com/mjggibson4/Practical1/blob/master/References.md "").
+References for the produced code as available in the following [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/References.md "").
 
