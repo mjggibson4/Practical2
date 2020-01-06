@@ -194,6 +194,13 @@ A test was also completed in which the up probability of the particles was set t
 
 Included in version of the program output is a legend indicating the bomb origin and a suitable scalebar for the heatmap as shown. Various messageboxes concerning program errors were created. These were tested sucessfully and documented within the [Troubleshooting Guide](https://github.com/mjggibson4/Practical2/blob/master/Finalised/Troubleshooting.md "")
 
+## Version 1.4
+
+This version proved to be the finalised release version of the software. This iteration mainly concerned small housekeeping tasks within the code itself. During production, comments were made within the code for documentation purposes but alas it was found that had not been updated as the code was ammended. The code was also checked to ensure it confirmed to the standards outlined by the Google style guide. http://google.github.io/styleguide/pyguide.html
+
+In terms of functionality; only one major addition was made within this iteration. This iteration concerned a supplementary statistical output. This output can be seen below:
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/StatisticsOutput.PNG" >
 
 # References
 
