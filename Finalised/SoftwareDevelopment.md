@@ -124,10 +124,18 @@ The following scenarios were selected:
 
 These parameters were selected in order to observed if the plume could be forced to move north, south, east and west. The following results were produced. As it can be seen from the above, the bacteria moved in the desired direction with every scenario.
 
+##### Test 1
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestWest.png" >
+##### Test 2
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestEast.png" >
+##### Test 3
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestNorth.png" >
+##### Test 4
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestSouth.png" >
+
+### Issues to Resolve
+It can be seen within scenario 2 that a vast majority of the bacteria left the defined spatial domain and hence were not marked within the heatmap or csv. A strategy to deal with boundary conditions must be produced within a future version of this software.
+Major issues can be seen to exist regarding the probabilities controlling the elevation of the particles.  By setting the “up” probability to an inappropriate value (around 0.5) the program will take an inordinate amount of time to run. In the worst-case scenario, an infinite loop will be entered as the particle will never land on the ground. Because of this, each particle should be given a limited number of chances to hit the ground before being disregarded. 
 
 
 
