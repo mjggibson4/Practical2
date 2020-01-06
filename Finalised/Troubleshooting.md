@@ -28,17 +28,22 @@ These parameters are validated against a set of defined conditions before the pr
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png">
 
+
 Cause: Parameters defining probabilities do not sum to 1 and hence need reviewed
+
 
 ### Error Message 2:
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png">
 
+
 Cause: String values have been entered within the parameters and need removed.
+
 
 ### Error Message 3: 
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png">
+
 
 Cause: Negative values have been inserted within the parameters
 
@@ -50,12 +55,15 @@ These variables MUST be positive integers for the program to function correctly.
 <br />
 
 
-## Web Scraping
+## Bombing Location Errors
 
-The initial locations of the sheep agents are defined via webscraping. In the event that an internet connection is not available this program would fail. To prevent this, a try/except error capturing structure has been put in place. In this structure, the program attempts to access values defined within the html of a defined website and set these to defined variables. If this process fails, the intial starting locations of the agents are placed randomly within the environment's domain. In this scenario, the user is alerted by the following message box.
+An internal check was created to mitigate for the scenario in which more than one bombing location is presented to the program. In the scenario in which more than one bombing location is present the following error is presented. The program is terminated on production of this message due to more than one bombing location being out of scope for this project. 
 
-<img src="https://github.com/mjggibson4/Practical1/blob/master/NetworkError.png" width="550">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNoBomb.PNG">
 
+A seperate scenario was accounted for in which no bombing location was found within the presented environment. In this case, a random location within the domain is generated and the user warned accordingly:
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorTwoBombs.PNG">
 
 <br />
 
