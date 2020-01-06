@@ -124,22 +124,69 @@ The following scenarios were selected:
 
 These parameters were selected in order to observed if the plume could be forced to move north, south, east and west. The following results were produced. As it can be seen from the above, the bacteria moved in the desired direction with every scenario.
 
-##### Test 1
+#### Test 1
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestWest.png" >
 
-##### Test 2
+#### Test 2
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestEast.png" >
 
-##### Test 3
+#### Test 3
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestNorth.png" >
 
-##### Test 4
+#### Test 4
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestSouth.png" >
 
 ### Issues to Resolve
+
 It can be seen within scenario 2 that a vast majority of the bacteria left the defined spatial domain and hence were not marked within the heatmap or csv. A strategy to deal with boundary conditions must be produced within a future version of this software.
 Major issues can be seen to exist regarding the probabilities controlling the elevation of the particles.  By setting the “up” probability to an inappropriate value (around 0.5) the program will take an inordinate amount of time to run. In the worst-case scenario, an infinite loop will be entered as the particle will never land on the ground. Because of this, each particle should be given a limited number of chances to hit the ground before being disregarded. 
 
+# Version 1.3
+
+V1.3 of the bacterial plume software mainly concerned placing a GUI interface upon the model. This GUI has been designed to collect parameters from the user, validate them and display the graphical results. 
+Additional Features added included:
+
+*	Creation of a GUI interface
+*	Add functionality to allow users to define own parameters
+*	Host figure within GUI
+*	Add labels/ legend to graphs etc
+*	Dealing with boundary conditions
+
+### Boundary Conditions 
+It was decided that as soon as a bacteria left the defined spatial domain it’s movement was to be ceased. This strategy potentially has performance benefits as it prevents the program moving a bacteria at the point at which it becomes out of scope for our purposes.
+In addition to this, it was decided that a limit of 150 moves was set for each bacteria. This limit has been arbitrarily set and hence could be open for criticism but prevents the software from entering an infinite loop. 
+
+### Parameter Validation and Testing
+
+The following menu was constructed within the GUI to allow users to define scenarios. These parameters default values are the values which have been outlined by the customer. 
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ParameterMenu.png" >
+
+On click of the “Apply” button, these parameters are validated according to the below conditions:
+*	All parameters must not be strings
+*	Parameters defining XY movement must all be decimals between 0 and 1
+*	Parameters defining XY movement must sum to 1
+*	Parameters defining Z movement must all be decimals between 0 and 1
+*	Parameters defining Z movement must sum to 1
+*	The parameters defining the number of bacteria and elevation must be positive integers
+
+On these conditions being violated, the user will be presented with one of three error screen messages as shown below:
+
+#### Error 1
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestSouth.png" >
+
+
+#### Error 2
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNonNumeric.png" >
+
+#### Error 3 
+
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png" >
+
+
+This logic was fully tested. The parameters and results obtained within are available here.
 
 
 
