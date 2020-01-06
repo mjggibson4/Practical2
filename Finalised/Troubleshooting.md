@@ -60,11 +60,8 @@ Cause: String values have been entered within the parameters and need removed.
 Cause: Negative values have been inserted within the parameters
 
 
-These variables MUST be positive integers for the program to function correctly. This data is validated internally via a try/except error capturing structure. In the event one of these variables is found not be a positive integer a message box is displayed asking the user to reenter these values as shown below.         
 
-<img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png">
-
-
+<br/>
 
 
 ## Bombing Location Errors
