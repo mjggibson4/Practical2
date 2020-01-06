@@ -188,6 +188,11 @@ On these conditions being violated, the user will be presented with one of three
 
 This logic was fully tested. The parameters and results obtained within are available [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/ParameterValidation.xlsx ""):
 
+### Additional Testing
+
+A test was also completed in which the up probability of the particles was set to be 1. Due to the alterations in the WHILE loop, an infinite was not entered. The output of this run was an empty graph indicating to the user that their parameters were unsuitable. 
+
+Included in version of the program output is a legend indicating the bomb origin and a suitable scalebar for the heatmap as shown. Various messageboxes concerning program errors were created. These were tested sucessfully and documented within the [Troubleshooting Guide](https://github.com/mjggibson4/Practical2/blob/master/Finalised/Troubleshooting.md "")
 
 
 # References
