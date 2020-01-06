@@ -15,11 +15,11 @@ This document seeks out to outline the problem which is to be solved within Prac
 8. Closing Remarks
 9. References
 
-<br/>
+
 # 1 Introduction
 
 In our scenario the customer is wishing to model the impact a bacterial bomb would have within a spatial domain. The bomb is to be denoted at a height of 75m and released 5000 particles. The scope of this project is to track the final resting places of these 5000 particles and display these locations to the user. This heatmap will also be exported to a csv file. 
-<br/>
+
 # 2 Deliverables
 
 The deliverables required for this project have been split into two categories for prioritisation purposes.
@@ -53,7 +53,7 @@ At the time of writing, it is intended to break this workflow into 4 stages:
 * Version 1.1:  Create wind probability variables and create bacteria class in distinct script
 * Version 1.2:  Create GUI script for project. Create error trapping methods.
 * Version 1.3   Finalise project
-<br/>
+
 # 3 Version 1
 
 ### Scope 
