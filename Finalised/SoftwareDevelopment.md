@@ -16,11 +16,11 @@ This document seeks out to outline the problem which is to be solved within Prac
 9. References
 
 
-# 1 Introduction
+# 1. Introduction
 
 In our scenario the customer is wishing to model the impact a bacterial bomb would have within a spatial domain. The bomb is to be denoted at a height of 75m and released 5000 particles. The scope of this project is to track the final resting places of these 5000 particles and display these locations to the user. This heatmap will also be exported to a csv file. 
 
-# 2 Deliverables
+# 2. Deliverables
 
 The deliverables required for this project have been split into two categories for prioritisation purposes.
 
@@ -54,7 +54,7 @@ At the time of writing, it is intended to break this workflow into 4 stages:
 * Version 1.2:  Create GUI script for project. Create error trapping methods.
 * Version 1.3   Finalise project
 
-# 3 Version 1
+# 3. Version 1
 
 ### Scope 
 
@@ -106,7 +106,7 @@ Modifiying the code slightly, the actual plume of the bacteria mid air can be ob
 No error catching was included within this model as far but where is would be included has been recorded within the docstrings of the functions in question with the tag TODO. 
 In debugging, was found that on numerous occasions I had confused x and y coordinates. This was due to python convention of listing the y coordinates before x coordinates and quickly resolved.
 
-# 4 Version 1.1
+# 4. Version 1.1
 
 ### Scope
 
@@ -155,7 +155,7 @@ These parameters were selected in order to observed if the plume could be forced
 It can be seen within scenario 2 that a vast majority of the bacteria left the defined spatial domain and hence were not marked within the heatmap or csv. A strategy to deal with boundary conditions must be produced within a future version of this software.
 Major issues can be seen to exist regarding the probabilities controlling the elevation of the particles.  By setting the “up” probability to an inappropriate value (around 0.5) the program will take an inordinate amount of time to run. In the worst-case scenario, an infinite loop will be entered as the particle will never land on the ground. Because of this, each particle should be given a limited number of chances to hit the ground before being disregarded. 
 
-# 5 Version 1.3
+# 5. Version 1.3
 
 V1.3 of the bacterial plume software mainly concerned placing a GUI interface upon the model. This GUI has been designed to collect parameters from the user, validate them and display the graphical results. 
 Additional Features added included:
@@ -208,7 +208,7 @@ A test was also completed in which the up probability of the particles was set t
 
 Included in version of the program output is a legend indicating the bomb origin and a suitable scalebar for the heatmap as shown. Various messageboxes concerning program errors were created. These were tested sucessfully and documented within the [Troubleshooting Guide](https://github.com/mjggibson4/Practical2/blob/master/Finalised/Troubleshooting.md "")
 
-# 6 Version 1.4
+# 6. Version 1.4
 
 This version proved to be the finalised release version of the software. This iteration mainly concerned small housekeeping tasks within the code itself. During production, comments were made within the code for documentation purposes but alas it was found that had not been updated as the code was ammended. The code was also checked to ensure it confirmed to the standards outlined by the Google style guide. http://google.github.io/styleguide/pyguide.html
 
@@ -216,7 +216,7 @@ In terms of functionality; only one major addition was made within this iteratio
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/StatisticsOutput.PNG" >
 
-# 7 Future Development
+# 7. Future Development
 
 A possible development roadmap of this software could involve the introduction of the following features:
 
@@ -225,10 +225,10 @@ A possible development roadmap of this software could involve the introduction o
 * Dynamic axis values to focus on area in question
 * Displaying plot within 3 dimensions
 
-# 8 Closing Remarks
+# 8. Closing Remarks
 
 The software produced achieves the scope which as been outlined within Section 2 of this document.
 
-# 9 References
+# 9. References
 
 Fronczak S. (2019). Software Development Life Cycle (SDLC): Making Sense of the Different Methodologies. Available: https://www.plutora.com/blog/software-development-life-cycle-making-sense-of-the-different-methodologies. Last accessed 1st Jan 2020.
