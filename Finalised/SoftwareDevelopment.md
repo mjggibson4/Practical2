@@ -57,7 +57,7 @@ The scope of this model included:
 
 The program was ran using the initial conditions as defined by the customers which are defined below:
 
-<img style="float: right;" src="https://github.com/mjggibson4/Practical2/blob/master/Images/IncrementalIterations.png">
+<img style="float: right;" src="https://github.com/mjggibson4/Practical2/blob/master/Images/IncrementalIterations.png" width="150">
 
 | Initial Conditions  |      |
 |---------------------|------|
