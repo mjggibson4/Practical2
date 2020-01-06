@@ -33,7 +33,7 @@ These parameters are validated against a set of defined conditions before the pr
 * Parameters defining Z movement must sum to 1
 * The parameters defining the number of bacteria and elevation must be positive integers
 
-
+<br/>
 These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed.
 
 ### Errror Message 1:
