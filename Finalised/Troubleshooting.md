@@ -7,7 +7,7 @@ This file documents the error messages associated within the bacterial bomb mode
 
 ## Parameter Validation
 Within this model the user is asked to input values for nine variables which dictate the initial conditions and wind speed of the scenario at hand.
-
+<br/>
 ##### Initial Conditions
    * Number of Bacteria: Number of bacteria to be released by the bomb
    * Elevation: Height at which bomb is detonated
@@ -23,7 +23,7 @@ Within this model the user is asked to input values for nine variables which dic
    * Level: Probability of particle keeping a constant z value
    * Down: Probability of particle moving in the negative z direction
    
-
+<br/>
 These parameters are validated against a set of defined conditions before the program is allowed to proceed. 
 
 * All parameters must not be strings
