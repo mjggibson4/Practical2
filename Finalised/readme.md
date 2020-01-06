@@ -129,5 +129,5 @@ This program is open source and licensed via an MIT license. The full details of
 
 This project has been produced as part of coursework for the module: Programming for Geographical Information Analysts: Core Skills (WUN).  Exercises and tutorials given within this course have been modified as appropriate and used within the python code for this project. In addition, I'd like to give thanks to my course tutor Andy Turner who helped with issues encountered during development.
 
-References for the produced code as available in the following [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/References.md "").
+References for the produced code are available [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/References.md "").
 
