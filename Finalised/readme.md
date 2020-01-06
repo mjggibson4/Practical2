@@ -3,7 +3,7 @@
 ## Description
 
 This python-based project has been designed to model of the fallout of a bacterial bomb. In this scenario, a bacterial based bomb has been placed at the top of a building and this program has been designed to model the movement of these particles within the wind and record their find resting locations. This wind is determined by probabilities which are to be defined by the user. The final output of this model is a heatmap of the resting locations of the bacteria and an associated csv file. 
-An in depth insight into how this program was developed is available [here](https://github.com/mjggibson4/Practical1/blob/master/Scope.md ""):
+An in depth insight into how this program was developed is available [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/SoftwareDevelopment.md ""):
 
 ## Table of Contents
 
@@ -22,12 +22,11 @@ An in depth insight into how this program was developed is available [here](http
 Before this project can be executed, a suitable python environment must first be in place. This project was used using the data science platform Anaconda. This package is free and includes the integrated development environment Spyder 3.3.6 on which this project was developed. An installation guide to Anaconda alongside installation instructions can be found here: 
 [install guide](https://docs.anaconda.com/anaconda/install/windows/ ""). 
 
-This model scrapes the initial location of the bomb from the web. Due to this a suitable web connection is advised. In the absence of an internet connection, a .txt file containing this bombing location has also been provided. 
 This model was developed in a PC environment but has been successfully tested on Mac OS.
 
 ## 2. Installation
 
-This project consists of 3 python scripts and one text file which should be downloaded from the github repository found here: [Practical 2 Repo](https://github.com/mjggibson4/Practical2 ""). These files should be saved to the user’s desktop. This program attempts to write a .csv file in the location from which the project is run. It is for this reason important the user has write access to this location to prevent complications.
+This project consists of 3 python scripts and one text file which should be downloaded from the github repository found here: [Practical 2 Repo](https://github.com/mjggibson4/Practical2/tree/master/Finalised ""). These files should be saved to the user’s desktop. This program attempts to write a .csv file in the location from which the project is run. It is for this reason important the user has write access to this location to prevent complications.
 
 ## 3. Project Structure
 
@@ -39,7 +38,7 @@ Maincode: Defines the logic behind the model itself.
 
 Framework: Contains the classes from which the bacterial agents are defined. This framework dictates the behaviours of the bacteria such as how they move in the XY and Z planes.
 
-In.txt (Optional but recommended): Backup environment containing the bombing location in the event of no internet connection.
+In.txt: Environment containing the bombing location.
 
 ## 3. Initialising the Program
 
@@ -69,7 +68,8 @@ Click the Model menu and then "Set Parameters". This produces a window in which 
 #### Initial Conditions
        Number of Bacteria: Number of bacteria to be released by the bomb
        Elevation: Height at which bomb is detonated
-        #### XY Probabilities 
+       
+#### XY Probabilities 
         North: Probability of particle moving in the positive y direction
         South: Probability of particle moving in the negative y direction
         West: Probability of particle moving in the negative x direction
@@ -82,21 +82,19 @@ Click the Model menu and then "Set Parameters". This produces a window in which 
 
 A screenshot of this menu is provided below:
 
-![alt text](https://github.com/mjggibson4/Practical1/blob/master/ParameterMenu.png "Logo Title Text 1")
+![alt text](https://github.com/mjggibson4/Practical2/blob/master/Images/ParameterMenu.png "Logo Title Text 1")
  
 Once these parameters have been defined, click apply. These parameters must fulfil the following conditions in order to be accepted by the GUI:
 
-*  All parameters must not be strings
+* All parameters must not be strings
 * Parameters defining XY movement must all be decimals between 0 and 1
 * Parameters defining XY movement must sum to 1
 * Parameters defining Z movement must all be decimals between 0 and 1
 * Parameters defining Z movement must sum to 1
 * The parameters defining the number of bacteria and elevation must be positive integers
 
-An internal check occurs to verify these parameters are valid case. If integers are not input, the following warning screen is displayed and user is forced to re-enter appropriate values:
+An internal check occurs to verify these parameters are valid case. If these values are not valid a suitable warning screen is displayed and user is forced to re-enter appropriate values. Detail on these warnings are available within [Troubleshooting](https://github.com/mjggibson4/Practical2/blob/master/Finalised/Troubleshooting.md "").
 
-
-<img src="https://github.com/mjggibson4/Practical1/blob/master/ParameterError.png" width="550">
 
 
 ### Run the Model
@@ -116,7 +114,9 @@ This model has been produced in Python 3.7. The code has been produced to adhere
 
 ## 6. Known Issues
 
-A known issue within this project is that an unnecessary figure  is display on running the program. The source of this bug is unknown at the time of writing but has zero impact of the functionality of the program itself and the results provided. 
+A known issue within this project is that an unnecessary figure is displayed on running the program. The source of this bug is unknown at the time of writing but has zero impact of the functionality of the program itself and the results provided. 
+
+This program attempted to scrape the starting location of the bomb but an error was encountered. At the time of writing the source of this error is unknown.
 
 ## 7. Troubleshooting
 In the case of errors within this program please check the troubleshooting file which can be located [here](https://github.com/mjggibson4/Practical2/blob/master/InternalChecks.md "")
