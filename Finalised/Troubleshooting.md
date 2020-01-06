@@ -24,7 +24,17 @@ Within this model the user is asked to input values for nine variables which dic
    * Down: Probability of particle moving in the negative z direction
    
 
-These parameters are validated against a set of defined conditions before the program is allowed to proceed. These condition can be viewed in full within the readme documentation XXXXX. These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed.
+These parameters are validated against a set of defined conditions before the program is allowed to proceed. 
+
+* All parameters must not be strings
+* Parameters defining XY movement must all be decimals between 0 and 1
+* Parameters defining XY movement must sum to 1
+* Parameters defining Z movement must all be decimals between 0 and 1
+* Parameters defining Z movement must sum to 1
+* The parameters defining the number of bacteria and elevation must be positive integers
+
+
+These check have been thoughly tested and this can be seen here XXXX. Incorrect values will result in one of the following three error messages being displayed.
 
 ### Errror Message 1:
 
