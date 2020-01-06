@@ -186,7 +186,7 @@ On these conditions being violated, the user will be presented with one of three
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorSum.png" >
 
 
-This logic was fully tested. The parameters and results obtained within are available here.
+This logic was fully tested. The parameters and results obtained within are available [here](https://github.com/mjggibson4/Practical2/blob/master/Finalised/ParameterValidation.xlsx ""):
 
 
 
