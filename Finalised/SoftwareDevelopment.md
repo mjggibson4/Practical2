@@ -28,10 +28,14 @@ The produced program should include the basic functionality in order to be consi
 
 # Development Plan
 
-This project will be undertaken using an iterative to software development. In this approach, the software in constructed in stages each building on the functionality that was introduced within the last iteration.
+This project will be undertaken using an iterative to software development. In this approach, the software in constructed in stages each building on the functionality that was introduced within the last iteration (Fronczak, 2019).
 
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/IncrementalIterations.png" width="450">
 
 At the time of writing, it is intended to break this workflow into 4 stages:
 
+
+# References
+
+Fronczak S. (2019). Software Development Life Cycle (SDLC): Making Sense of the Different Methodologies. Available: https://www.plutora.com/blog/software-development-life-cycle-making-sense-of-the-different-methodologies. Last accessed 1st Jan 2020.
