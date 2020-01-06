@@ -57,11 +57,24 @@ The scope of this model included:
 
 The program was ran using the initial conditions as defined by the customers which are defined below:
 
-| Initial Conditions  |      |   |   |   |
-|---------------------|------|---|---|---|
-| Number of Bacteria  | 5000 |   |   |   |
-| Elevation           | 75   |   |   |   |
-|                     |      |   |   |   |
+| Initial Conditions  |      |
+|---------------------|------|
+| Number of Bacteria  | 5000 |
+| Elevation           | 75   |
+|                     |      |
+
+|    XY Probabilities    |      |   |   |   |
+|------------------------|------|---|---|---|
+| West                   | 0.05 |   |   |   |
+| East                   | 0.75 |   |   |   |
+| North                  | 0.1  |   |   |   |
+| South                  | 0.1  |   |   |   |
+
+|    Z Probabilities     |      |   |   |   |
+|------------------------|------|---|---|---|
+| Down                   | 0.7  |   |   |   |
+| Up                     | 0.2  |   |   |   |
+| North                  | 0.1  |   |   |   |
 
 
 # References
