@@ -40,6 +40,28 @@ At the time of writing, it is intended to break this workflow into 4 stages:
 * Version 1.2:  Create GUI script for project. Create error trapping methods.
 * Version 1.3   Finalise project
 
+# Version 1
+
+### Scope 
+
+The scope of this version of the model was to produce a rudimental version of the bacterial plume. This script was focused on modelling the movement of the bacteria within the plume using the provided probabilities and intentionally kept within one script in aid of simplicity. This script was to be used as a basis on which the whole project would be expanded and fleshed out. 
+
+The scope of this model included:
+*	The ability to read a file containing the bombing location
+*	Find the coordinates of this location within this file
+*	Produce a blank square list to be used to mark the landing locations of the bacteria
+*	Move the bacteria in a random fashion in both vertical and horizontal locations
+*	Record the landing locations of these bacteria and display these within a heat map
+
+### Testing
+
+The program was ran using the initial conditions as defined by the customers which are defined below:
+
+| Initial Conditions  |      |   |   |   |
+|---------------------|------|---|---|---|
+| Number of Bacteria  | 5000 |   |   |   |
+| Elevation           | 75   |   |   |   |
+|                     |      |   |   |   |
 
 
 # References
