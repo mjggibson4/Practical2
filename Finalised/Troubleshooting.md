@@ -77,7 +77,7 @@ A seperate scenario was accounted for in which no bombing location was found wit
 
 ## Writing CSV
 
-This program culminates in a CSV containing the heatmap of the landed bacteria being written to the directory from which the scripts have been run. In the event of the user having no write access to this location, the following error will be observed. In such case, the script should be run from a different location where the user has write acccess. 
+This program culminates in a CSV containing the heatmap of the landed bacteria being written to the directory from which the scripts have been run. In the event of the user having no write access to this location, the following error will be observed. In such case, the script should be run from a different location where the user has write access. 
 
 <img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorCSV.PNG">
 
