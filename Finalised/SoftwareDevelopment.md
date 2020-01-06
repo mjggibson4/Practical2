@@ -227,7 +227,7 @@ A possible development roadmap of this software could involve the introduction o
 
 # 8 Closing Remarks
 
-The software produced achieves the scope which as been outlined within 
+The software produced achieves the scope which as been outlined within Section 2 of this document.
 
 # 9 References
 
