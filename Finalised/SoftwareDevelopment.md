@@ -31,7 +31,7 @@ The produced program should include the basic functionality in order to be consi
 This project will be undertaken using an iterative to software development. In this approach, the software in constructed in stages each building on the functionality that was introduced within the last iteration.
 
 
-<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/IncrementalIterations.png" width="300">
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/IncrementalIterations.png" width="450">
 
 At the time of writing, it is intended to break this workflow into 4 stages:
 
