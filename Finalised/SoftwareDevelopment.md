@@ -166,6 +166,10 @@ Additional Features added included:
 *	Add labels/ legend to graphs etc
 *	Dealing with boundary conditions
 
+## GUI Interface
+
+It was important that the GUI used within this project was familiar to users. The GUI constructed consists of a window with casade menus as standard in windows applications. These menus direct users to run the program and edit the parameters as necessary. A help menu was constructed to direct users towards troubleshooting materials.
+
 ### Boundary Conditions 
 It was decided that as soon as a bacteria left the defined spatial domain it’s movement was to be ceased. This strategy potentially has performance benefits as it prevents the program moving a bacteria at the point at which it becomes out of scope for our purposes.
 In addition to this, it was decided that a limit of 150 moves was set for each bacteria. This limit has been arbitrarily set and hence could be open for criticism but prevents the software from entering an infinite loop. 
