@@ -174,7 +174,7 @@ On these conditions being violated, the user will be presented with one of three
 
 #### Error 1
 
-<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/TestSouth.png" >
+<img src="https://github.com/mjggibson4/Practical2/blob/master/Images/ErrorNegative.png" >
 
 
 #### Error 2
