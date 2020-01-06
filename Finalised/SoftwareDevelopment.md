@@ -7,7 +7,6 @@ This document seeks out to outline the problem which is to be solved within Prac
 
 1. Introduction
 2. Deliverables
-Program Iterations
 3. Version 1.0
 4. Version 1.1
 5. Version 1.2
